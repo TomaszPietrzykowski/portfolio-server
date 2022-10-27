@@ -58,7 +58,7 @@ exports.sendEmail = catchError(async (req, res) => {
   await transporter.sendMail({
     from: process.env.DEVELOPER_OFFICIAL_EMAIL,
     to: `${senderName}<${senderEmail}>`,
-    subject: `Thank you for reaching out to us :)`,
+    subject: `Thanks for reaching out :)`,
     text: txtResponse,
     html: outputResponse,
   })
@@ -67,7 +67,7 @@ exports.sendEmail = catchError(async (req, res) => {
   await transporter.sendMail({
     from: process.env.DEVELOPER_OFFICIAL_EMAIL,
     to: process.env.DEVELOPER_CONFIRMATION_EMAIL,
-    subject: `New email in Climate Monitor inbox!`,
+    subject: `New email in private inbox!`,
     text: txtNotify,
     html: outputNotify,
   })

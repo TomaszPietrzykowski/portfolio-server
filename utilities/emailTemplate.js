@@ -61,7 +61,7 @@ const emailTemplate = (markup) => {
         </style>
         </head>
         <body>
-        <header><a href="https://climatemonitor.info"><img src="https://climatemonitor.info/logoemail.svg" alt="Climate Monitor" height="50px"></a></header>
+        <header></header>
         <main>
           ${markup}
         </main>
